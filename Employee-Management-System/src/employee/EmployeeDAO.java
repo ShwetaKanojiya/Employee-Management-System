@@ -10,7 +10,7 @@ public class EmployeeDAO {
     public EmployeeDAO() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee_management", "root", "125125");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee_management", "root", "*******");
             
             // Prepared Statements for CRUD operations
             insertStmt = c.prepareStatement("INSERT INTO employee (name, age, department, salary) VALUES (?, ?, ?, ?)");
